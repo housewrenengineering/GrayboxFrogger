@@ -1,8 +1,308 @@
 [gd_scene format=3 uid="uid://drafiprih2lov"]
 
 [ext_resource type="PackedScene" uid="uid://efvjkyl5eqsu" path="res://scenes/player.tscn" id="1_nnsk1"]
+[ext_resource type="Script" uid="uid://deeljn16i1x41" path="res://scenes/world.gd" id="1_rwgxs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rwgxs"]
+size = Vector2(221, 562)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4wyf3"]
+size = Vector2(623.25, 136.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k0juu"]
+size = Vector2(759.25, 121)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_71j4m"]
+size = Vector2(221, 562)
 
 [node name="World" type="Node2D" unique_id=921543173]
+script = ExtResource("1_rwgxs")
 
-[node name="CharacterBody2D" parent="." unique_id=1743956270 instance=ExtResource("1_nnsk1")]
-position = Vector2(144, 160)
+[node name="ColorRect" type="ColorRect" parent="." unique_id=718273458]
+offset_right = 288.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="Player" parent="." unique_id=1743956270 instance=ExtResource("1_nnsk1")]
+unique_name_in_owner = true
+position = Vector2(192, 387)
+
+[node name="StartingPoint" type="ColorRect" parent="." unique_id=1167109927]
+unique_name_in_owner = true
+visible = false
+offset_left = 142.0
+offset_top = 386.0
+offset_right = 174.0
+offset_bottom = 392.0
+
+[node name="Control" type="Control" parent="." unique_id=1724546651]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 281.0
+offset_bottom = 375.0
+
+[node name="ColorRect2" type="ColorRect" parent="Control" unique_id=1948769920]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 350.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(4.5242905e-06, 0.7932601, 0.43042472, 0.6156863)
+
+[node name="ColorRect3" type="ColorRect" parent="Control" unique_id=574204365]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2.0
+offset_bottom = -342.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(4.5242905e-06, 0.7932601, 0.43042472, 0.6156863)
+
+[node name="ColorRect8" type="ColorRect" parent="Control" unique_id=48506788]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 318.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3914285, 0.7160066, 0.73601854, 0.6156863)
+
+[node name="ColorRect9" type="ColorRect" parent="Control" unique_id=126892240]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 286.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.69820863, 0.91146314, 0.9237571, 0.6156863)
+
+[node name="ColorRect10" type="ColorRect" parent="Control" unique_id=768095131]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 190.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14944056, 0.7761723, 0.44704276, 0.6156863)
+
+[node name="ColorRect11" type="ColorRect" parent="Control" unique_id=32816280]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 158.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.69820863, 0.91146314, 0.9237571, 0.6156863)
+
+[node name="ColorRect14" type="ColorRect" parent="Control" unique_id=124055211]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 126.0
+offset_right = 1.0
+offset_bottom = -214.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3914285, 0.7160066, 0.73601854, 0.6156863)
+
+[node name="ColorRect16" type="ColorRect" parent="Control" unique_id=41644174]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 62.0
+offset_right = 1.0
+offset_bottom = -278.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3914285, 0.7160066, 0.73601854, 0.6156863)
+
+[node name="ColorRect15" type="ColorRect" parent="Control" unique_id=38638753]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 94.0
+offset_right = 1.0
+offset_bottom = -246.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.69820863, 0.91146314, 0.9237571, 0.6156863)
+
+[node name="ColorRect17" type="ColorRect" parent="Control" unique_id=820765292]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 30.0
+offset_right = 1.0
+offset_bottom = -310.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.69820863, 0.91146314, 0.9237571, 0.6156863)
+
+[node name="ColorRect12" type="ColorRect" parent="Control" unique_id=1542828523]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 254.0
+offset_bottom = -86.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3914285, 0.7160066, 0.73601854, 0.6156863)
+
+[node name="ColorRect13" type="ColorRect" parent="Control" unique_id=649690167]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 222.0
+offset_bottom = -118.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.69820863, 0.91146314, 0.9237571, 0.6156863)
+
+[node name="Walls" type="Control" parent="." unique_id=727820372]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="WallLeft" type="StaticBody2D" parent="Walls" unique_id=1239164930]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallLeft" unique_id=1047550011]
+position = Vector2(-104, 248)
+shape = SubResource("RectangleShape2D_rwgxs")
+
+[node name="WallTop" type="StaticBody2D" parent="Walls" unique_id=271850070]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallTop" unique_id=876532690]
+position = Vector2(128, -64)
+shape = SubResource("RectangleShape2D_4wyf3")
+
+[node name="WallBottom" type="StaticBody2D" parent="Walls" unique_id=11572547]
+position = Vector2(0, 14)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallBottom" unique_id=1653557829]
+position = Vector2(248, 432)
+shape = SubResource("RectangleShape2D_k0juu")
+
+[node name="WallRight" type="StaticBody2D" parent="Walls" unique_id=649962558]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/WallRight" unique_id=1169924396]
+position = Vector2(392, 248)
+shape = SubResource("RectangleShape2D_71j4m")
+
+[node name="ArrowKeys" type="Control" parent="." unique_id=282153475]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 11.0
+offset_top = 387.0
+offset_right = 277.0
+offset_bottom = 507.0
+size_flags_horizontal = 6
+size_flags_vertical = 10
+
+[node name="ColorRect" type="ColorRect" parent="ArrowKeys" unique_id=696343958]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ArrowKeys" unique_id=1668303781]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ArrowKeys/VBoxContainer2" unique_id=691146249]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="ButtonPlaceholder1" type="Button" parent="ArrowKeys/VBoxContainer2/HBoxContainer" unique_id=435888107]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+
+[node name="ButtonUp" type="Button" parent="ArrowKeys/VBoxContainer2/HBoxContainer" unique_id=1730081628]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(57, 60)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "up"
+
+[node name="ButtonPlaceholder2" type="Button" parent="ArrowKeys/VBoxContainer2/HBoxContainer" unique_id=420944147]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ArrowKeys/VBoxContainer2" unique_id=1178754756]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="ButtonLeft" type="Button" parent="ArrowKeys/VBoxContainer2/HBoxContainer2" unique_id=1447343875]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(57, 60)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "left"
+
+[node name="ButtonDown" type="Button" parent="ArrowKeys/VBoxContainer2/HBoxContainer2" unique_id=364734501]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(57, 60)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "down"
+
+[node name="ButtonRight" type="Button" parent="ArrowKeys/VBoxContainer2/HBoxContainer2" unique_id=1504659256]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(57, 60)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "right"
+
+[connection signal="pressed" from="ArrowKeys/VBoxContainer2/HBoxContainer/ButtonUp" to="." method="_on_button_up_pressed"]
+[connection signal="pressed" from="ArrowKeys/VBoxContainer2/HBoxContainer2/ButtonLeft" to="." method="_on_button_left_pressed"]
+[connection signal="pressed" from="ArrowKeys/VBoxContainer2/HBoxContainer2/ButtonDown" to="." method="_on_button_down_pressed"]
+[connection signal="pressed" from="ArrowKeys/VBoxContainer2/HBoxContainer2/ButtonRight" to="." method="_on_button_right_pressed"]

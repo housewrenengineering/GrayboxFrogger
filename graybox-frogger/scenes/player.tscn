@@ -2,20 +2,26 @@
 
 [ext_resource type="Script" uid="uid://dfavpckcikdsd" path="res://scenes/player.gd" id="1_3vyb7"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_e5uuo"]
+[sub_resource type="Gradient" id="Gradient_3vyb7"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.28199515, 0.6679497, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g2els"]
+gradient = SubResource("Gradient_3vyb7")
+width = 32
+height = 32
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vyb7"]
 size = Vector2(32, 32)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_nnsk1"]
-radius = 16.0
-
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1743956270]
+collision_mask = 14
 script = ExtResource("1_3vyb7")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1503368455]
-modulate = Color(0.15127608, 0.15127608, 0.15127608, 1)
 position = Vector2(0, -16)
-texture = SubResource("PlaceholderTexture2D_e5uuo")
+texture = SubResource("GradientTexture2D_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1581978777]
 position = Vector2(0, -16)
-shape = SubResource("CircleShape2D_nnsk1")
+shape = SubResource("RectangleShape2D_3vyb7")
