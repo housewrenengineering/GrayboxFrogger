@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dcqconj877nge"]
+
+[ext_resource type="Script" uid="uid://b30q7c230hhyc" path="res://scenes/good_path.gd" id="1_u7ht0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qfnet"]
+size = Vector2(50, 32)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_u7ht0"]
+size = Vector2(50, 32)
+
+[node name="GoodPathSmall" type="Area2D" unique_id=1839917597]
+collision_layer = 32
+collision_mask = 33
+script = ExtResource("1_u7ht0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1404231410]
+shape = SubResource("RectangleShape2D_qfnet")
+debug_color = Color(0.4827761, 0.5842502, 0.1619657, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=767156908]
+texture = SubResource("PlaceholderTexture2D_u7ht0")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cwae5yrkqwpqb"]
+
+[ext_resource type="Script" uid="uid://dw1yrblk75nxq" path="res://scenes/DELETEbad_path.gd" id="1_ymbbw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qfnet"]
+size = Vector2(295, 160)
+
+[node name="BadPath" type="Area2D" unique_id=1083083778]
+collision_layer = 16
+script = ExtResource("1_ymbbw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1720164734]
+position = Vector2(148.5, 113)
+shape = SubResource("RectangleShape2D_qfnet")
+debug_color = Color(0.9949356, 0.06759368, 1.92523e-07, 0.41960785)
+
+[node name="Red" type="ColorRect" parent="." unique_id=349126512]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = 33.0
+offset_right = 296.0
+offset_bottom = 193.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.8980392, 0, 0.14117648, 0.50980395)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

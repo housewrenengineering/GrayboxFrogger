@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ixdgdrd72tp2"]
+
+[ext_resource type="Script" uid="uid://2bqqnku31vh7" path="res://scenes/path_row.gd" id="1_lgetl"]
+
+[sub_resource type="Curve2D" id="Curve2D_w7kh3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -8, 128)
+}
+point_count = 1
+
+[node name="PathRow1" type="Path2D" unique_id=1126577711]
+curve = SubResource("Curve2D_w7kh3")
+script = ExtResource("1_lgetl")

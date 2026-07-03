@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://vxuxb3ddiqaj"]
+
+[ext_resource type="Script" uid="uid://g8r2n4sutrs7" path="res://scenes/enemy.gd" id="1_4gibb"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_8tegq"]
+size = Vector2(64, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8tegq"]
+size = Vector2(56, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqele"]
+size = Vector2(56, 24)
+
+[node name="EnemyBig" type="CharacterBody2D" unique_id=412682086]
+collision_layer = 0
+collision_mask = 5
+motion_mode = 1
+script = ExtResource("1_4gibb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1252629279]
+modulate = Color(0.90169317, 0.054516762, 0.270585, 1)
+texture = SubResource("PlaceholderTexture2D_8tegq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1627888144]
+shape = SubResource("RectangleShape2D_8tegq")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=106940503]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1296599911]
+shape = SubResource("RectangleShape2D_dqele")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -15,11 +15,15 @@ run/main_scene="res://scenes/world.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+PathObjectSpawner="*uid://dlrjdgsrj4w38"
+
 [display]
 
 window/size/viewport_width=288
 window/size/viewport_height=512
-window/size/window_width_override=576
+window/size/window_width_override=600
 window/size/window_height_override=1024
 window/stretch/mode="canvas_items"
 
@@ -55,7 +59,10 @@ right={
 2d_physics/layer_1="Player"
 2d_physics/layer_2="Wall"
 2d_physics/layer_3="Enemy"
-2d_physics/layer_4="Obstacle"
+2d_physics/layer_4="Obstacle (not used?)"
+2d_physics/layer_5="BadPath"
+2d_physics/layer_6="GoodPath"
+2d_physics/layer_7="Goal"
 
 [physics]
 
