@@ -120,6 +120,20 @@ grow_vertical = 2
 color = Color(0.8980392, 0, 0.14117648, 0.50980395)
 metadata/_edit_use_anchors_ = true
 
+[node name="Line2D" type="Line2D" parent="BadPath" unique_id=1044564368]
+z_index = 1
+position = Vector2(23, 61)
+points = PackedVector2Array(-11, 126, 254, -26)
+width = 4.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="BadPath" unique_id=1541922471]
+z_index = 1
+position = Vector2(23, 61)
+points = PackedVector2Array(-11, -25, 254, 126)
+width = 4.0
+default_color = Color(0, 0, 0, 1)
+
 [node name="Goal" type="Area2D" parent="." unique_id=74808480]
 unique_name_in_owner = true
 collision_layer = 64
@@ -471,6 +485,7 @@ color = Color(0.69820863, 0.91146314, 0.9237571, 0.6156863)
 
 [node name="Player" parent="." unique_id=1743956270 instance=ExtResource("1_nnsk1")]
 unique_name_in_owner = true
+z_index = 5
 position = Vector2(149, 384)
 
 [node name="Walls" type="Control" parent="." unique_id=727820372]

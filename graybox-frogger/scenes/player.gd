@@ -15,9 +15,7 @@ func _physics_process(_delta: float) -> void:
 		move_left()
 	if Input.is_action_just_pressed("right"):
 		move_right()
-	move_and_slide()
-	
-	
+		
 func move_up() -> void: 
 	position.y -= TILE_SIZE
 	move_and_slide()

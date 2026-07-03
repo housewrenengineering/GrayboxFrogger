@@ -63,7 +63,7 @@ func game_pause() -> void:
 	pass
 	
 func game_unpause() -> void:
-	#print("game paused")
+	#print("game UNpaused")
 	get_tree().paused = false	
 	pause.visible = false
 	start.visible = false
@@ -138,19 +138,16 @@ func _on_win_menu_pressed() -> void:
 
 func _on_button_up_pressed() -> void:
 	%Player.move_up()
-	pass # Replace with function body.
-
+	pass 
 
 func _on_button_left_pressed() -> void:
 	%Player.move_left()
-	pass # Replace with function body.
-
+	pass 
 
 func _on_button_down_pressed() -> void:
 	%Player.move_down()
-	pass # Replace with function body.
-
+	pass 
 
 func _on_button_right_pressed() -> void:
 	%Player.move_right()
-	pass # Replace with function body.
+	pass 

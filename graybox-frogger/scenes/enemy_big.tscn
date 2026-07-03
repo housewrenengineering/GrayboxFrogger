@@ -12,6 +12,7 @@ size = Vector2(56, 24)
 size = Vector2(56, 24)
 
 [node name="EnemyBig" type="CharacterBody2D" unique_id=412682086]
+z_index = 1
 collision_layer = 0
 collision_mask = 5
 motion_mode = 1
@@ -29,5 +30,17 @@ collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1296599911]
 shape = SubResource("RectangleShape2D_dqele")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=726289834]
+position = Vector2(-4, 4)
+points = PackedVector2Array(-26, 10, 34, -18)
+width = 4.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="." unique_id=476219673]
+position = Vector2(-4, 4)
+points = PackedVector2Array(-26, -18, 35, 10)
+width = 4.0
+default_color = Color(0, 0, 0, 1)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

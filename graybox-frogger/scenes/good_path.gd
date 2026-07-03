@@ -7,7 +7,6 @@ var activePath : Path2D
 func _physics_process(delta: float) -> void:
 	if (player):
 		player.position.x += delta * activePath.speed_multiplier * activePath.speed_direction
-	#print(bad_path.monitoring)
 	pass
 	
 

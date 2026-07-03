@@ -9,6 +9,7 @@ size = Vector2(50, 32)
 size = Vector2(50, 32)
 
 [node name="GoodPathSmall" type="Area2D" unique_id=1839917597]
+z_index = 2
 collision_layer = 32
 collision_mask = 33
 script = ExtResource("1_u7ht0")
