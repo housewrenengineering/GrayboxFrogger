@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b30q7c230hhyc" path="res://scenes/good_path.gd" id="1_tyi3a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qfnet"]
-size = Vector2(112, 32)
+size = Vector2(80, 32)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_u4cwo"]
 size = Vector2(112, 32)

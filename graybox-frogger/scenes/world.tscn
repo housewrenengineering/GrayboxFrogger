@@ -91,10 +91,9 @@ color = Color(0, 0, 0, 1)
 
 [node name="StartingPoint" type="ColorRect" parent="." unique_id=1167109927]
 unique_name_in_owner = true
-visible = false
-offset_left = 149.0
+offset_left = 133.0
 offset_top = 384.0
-offset_right = 181.0
+offset_right = 165.0
 offset_bottom = 390.0
 
 [node name="BadPath" type="Area2D" parent="." unique_id=1559574320]
@@ -707,6 +706,7 @@ text = "[paused]"
 horizontal_alignment = 1
 
 [node name="Pause-Resume" type="Button" parent="Menu/Pause" unique_id=336256450]
+process_mode = 3
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -864,7 +864,7 @@ theme_override_font_sizes/font_size = 26
 text = "Menu"
 
 [node name="Timer" type="Timer" parent="." unique_id=23435886]
-wait_time = 30.0
+wait_time = 15.0
 one_shot = true
 
 [node name="TimerLabel" type="Label" parent="." unique_id=152994770]
